@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vivian涵涵 官網</title>
+<meta name="description" content="Vivian涵涵，高雄專職音樂工作者：駐唱、商演、教學、創作。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito+Sans:wght@400;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<style>
+/* Layout: same as the Wix home — centered nav, wide photo, centered name + intro, three pink pill buttons, pink footer band */
+:root{
+  --bg:#FFFFFF;
+  --ink:#181818;        /* 深灰：最深的字色，不用純黑 */
+  --muted:#7A7A7A;
+  --line:#BEBEBE;       /* 淺灰 */
+  --coral:#F69CA4;      /* 深粉紅 */
+  --coral-dark:#E9848E;
+  --blush:#FFE9EB;      /* 淺粉紅 */
+  --pink-soft:#FBD3D7;
+  --sans:"Avenir","Avenir Next","Nunito Sans","Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --script:"Dancing Script","Brush Script MT",cursive;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.7;margin:0}
+.pad{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--coral-dark);outline-offset:3px;border-radius:4px}
+
+nav{padding-block:22px 18px}
+nav ul{list-style:none;margin:0 auto;padding:0;display:flex;flex-wrap:nowrap;justify-content:center;gap:20px;max-width:720px;font-size:14px;white-space:nowrap}
+nav a{text-decoration:none;padding:4px 0;border-bottom:1.5px solid transparent}
+nav a:hover,nav a[aria-current]{border-color:var(--coral);color:var(--coral-dark)}
+
+.hero{max-width:980px;margin:0 auto}
+.hero img{display:block;width:100%;max-width:100%;aspect-ratio:940/540;object-fit:cover;object-position:58% 45%}
+
+.intro{text-align:center;padding-block:40px 36px}
+h1{margin:0;color:var(--coral);line-height:1.1;font-weight:400;display:flex;justify-content:center;align-items:baseline;gap:2px}
+h1 .en{font-family:var(--script);font-weight:600;font-size:clamp(54px,15vw,76px)}
+h1 .zh{font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;font-weight:600;font-size:clamp(44px,12.5vw,64px);letter-spacing:.01em}
+.title{margin:26px 0 0;font-weight:700;font-size:18px;letter-spacing:.06em}
+.roles{margin:4px 0 0;color:var(--muted);font-size:15px;letter-spacing:.08em}
+.roles span{color:var(--line);margin:0 .35em}
+.desc{margin:22px 0 0;font-size:14px;line-height:1.85}
+
+.btns{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,4vw,28px);margin:36px auto 0;max-width:600px}
+.btns a{display:block;white-space:nowrap;text-align:center;background:var(--coral);color:#fff;font-weight:700;font-size:15px;letter-spacing:.08em;text-decoration:none;padding:9px 0;border-radius:99px;transition:background .2s}
+.btns a:hover{background:var(--coral-dark)}
+
+footer{background:var(--blush);text-align:center;padding-block:28px 34px}
+.social{display:flex;justify-content:center;gap:26px;list-style:none;margin:0;padding:0}
+.social a{display:flex;width:40px;height:40px;align-items:center;justify-content:center;color:var(--coral);transition:color .2s}
+.social a:hover{color:var(--coral-dark)}
+.social svg{width:30px;height:30px;fill:currentColor}
+.copy{margin:20px 0 0;font-size:12px;color:var(--muted)}
+
+@media (max-width:520px){
+  nav ul{justify-content:space-between;gap:0;font-size:clamp(11px,3.3vw,14px)}
+  .btns a{font-size:clamp(12px,3.8vw,15px);letter-spacing:.04em;padding:8px 0}
+}
+</style>
+</head>
+<body>
+<!-- ✏️ 想改文字：直接修改下面兩個 > < 中間的中文字就好，符號不要動 -->
+<nav class="pad" aria-label="主選單">
+  <ul>
+    <li><a href="index.html" aria-current="page">首頁</a></li>
+    <li><a href="perform.html">表演經歷</a></li>
+    <li><a href="media.html">影音紀錄</a></li>
+    <li><a href="teaching.html">教學經歷</a></li>
+    <li><a href="schedule.html">課程與預約</a></li>
+    <li><a href="original.html">創作</a></li>
+    <li><a href="sponsor.html">贊助</a></li>
+  </ul>
+</nav>
+
+<div class="hero pad">
+  <img src="images/index-01.jpg" alt="Vivian 抱著木吉他站在白色窗簾旁">
+</div>
+
+<section class="intro pad">
+  <h1><span class="en">Vivian</span><span class="zh">涵涵</span></h1>
+  <p class="title">專職音樂工作者</p>
+  <p class="roles">駐唱<span>|</span>商演<span>|</span>教學<span>|</span>創作</p>
+  <p class="desc">擅長木吉他彈唱與指彈吉他演奏<br>希望透過演出、教學與創作<br>把喜歡的旋律分享給更多人</p>
+  <div class="btns">
+    <a href="perform.html">演出經歷</a>
+    <a href="original.html">原創作品</a>
+    <a href="schedule.html">課程預約</a>
+  </div>
+</section>
+
+<footer class="pad">
+  <ul class="social">
+    <li><a href="https://www.facebook.com/viviansingasong/" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6.2c0-.8.2-1.2 1.4-1.2H17V2h-2.6C11.6 2 10.6 3.4 10.6 5.8V8H8.5v3h2.1v11H14V11h2.6l.4-3z"/></svg></a></li>
+    <li><a href="https://www.instagram.com/vivian_guitarmusic/" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm4.9-8.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM12 3.6c2.7 0 3 0 4.1.1 2.8.1 4.1 1.4 4.2 4.2.1 1.1.1 1.4.1 4.1s0 3-.1 4.1c-.1 2.8-1.4 4.1-4.2 4.2-1.1.1-1.4.1-4.1.1s-3 0-4.1-.1c-2.8-.1-4.1-1.4-4.2-4.2C3.6 15 3.6 14.7 3.6 12s0-3 .1-4.1C3.8 5.1 5.1 3.8 7.9 3.7 9 3.6 9.3 3.6 12 3.6zM12 2C9.3 2 8.9 2 7.8 2.1 4.2 2.2 2.2 4.2 2.1 7.8 2 8.9 2 9.3 2 12s0 3.1.1 4.2c.1 3.6 2.1 5.6 5.7 5.7 1.1.1 1.5.1 4.2.1s3.1 0 4.2-.1c3.6-.1 5.6-2.1 5.7-5.7.1-1.1.1-1.5.1-4.2s0-3.1-.1-4.2c-.1-3.6-2.1-5.6-5.7-5.7C15.1 2 14.7 2 12 2z"/></svg></a></li>
+    <li><a href="https://www.threads.com/@vivian_guitarmusic" aria-label="Threads"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11"/><path fill="#fff" d="M15.3 11.6c-.1 0-.1-.1-.2-.1-.1-1.9-1.2-3-2.9-3-1 0-1.9.4-2.4 1.2l.9.6c.4-.6 1-.7 1.5-.7.6 0 1 .2 1.3.5.2.2.3.6.4 1-.5-.1-1.1-.1-1.7-.1-1.7.1-2.8 1.1-2.7 2.4 0 .7.4 1.2.9 1.6.5.3 1.1.5 1.8.4.9 0 1.6-.4 2.1-1 .3-.5.6-1.1.6-1.8.4.3.8.6.9 1 .3.7.3 1.8-.6 2.7-.8.8-1.8 1.1-3.2 1.1-1.6 0-2.8-.5-3.6-1.5-.7-.9-1.1-2.3-1.1-4s.4-3.1 1.1-4c.8-1 2-1.5 3.6-1.5 1.6 0 2.8.5 3.7 1.5.4.5.7 1.1.9 1.8l1.1-.3c-.2-.9-.6-1.6-1.1-2.2-1.1-1.3-2.6-2-4.6-2-2 0-3.5.7-4.5 2-.9 1.1-1.4 2.7-1.4 4.7s.5 3.5 1.4 4.7c1 1.3 2.5 2 4.5 2 1.7 0 3-.5 4-1.4 1.3-1.3 1.3-3 .9-4-.3-.7-.9-1.3-1.7-1.6zm-3.1 2.9c-.7 0-1.5-.3-1.5-1 0-.5.4-1.1 1.6-1.2h.4c.4 0 .9 0 1.3.1-.1 1.6-.9 2.1-1.8 2.1z"/></svg></a></li>
+    <li><a href="https://www.youtube.com/c/vivianguitarmusic" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3-5.8 3z"/></svg></a></li>
+  </ul>
+  <p class="copy">© 2026 Vivian涵涵・Kaohsiung</p>
+</footer>
+</body>
+</html>
